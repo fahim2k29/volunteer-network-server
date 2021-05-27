@@ -9,7 +9,7 @@ const port = 5000
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.lr5ds.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
 
-var serviceAccount = require("./configs/volunteer-network90-firebase-adminsdk-g917c-baf5cb2934.json");
+// var serviceAccount = require("./configs/volunteer-network90-firebase-adminsdk-g917c-baf5cb2934.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
